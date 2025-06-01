@@ -31,11 +31,11 @@
       url: https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip
       dest: /tmp/frontend.zip        
 
-  - name: Unarchive a file that needs to be downloaded (added in 2.0)
+  - name: unzip frontend code
     ansible.builtin.unarchive:
-      src: /tmp/frontend.zip 
+      src: /tmp/frontend.zip
       dest: /usr/share/nginx/html
-      remote_src: yes    
+      remote_src: yes  
 
   - name: remove default nginx conf
     ansible.builtin.file:
