@@ -12,7 +12,7 @@
 
   - name: installing redis
     ansible.builtin.package:
-    - name: redis
+      name: "redis"
       state: present
 
   - name: modifying the config file
