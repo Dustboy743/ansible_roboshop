@@ -1,0 +1,10 @@
+---
+
+- name: installing redis mongoDB
+  hosts: redisdb
+  become: yes
+  tasks:
+  - name: disabling the default redis version
+    ansible.builtin.service:
+      name: redis
+      enabled: false    
