@@ -10,7 +10,7 @@
       state: present
     loop:
     - maven
-    - "mysql-server"
+    - mysql
 
   - name: install PyMySQL and cryptography ##---these are needed for anisble to connect to MYsql DB)
     ansible.builtin.pip:
