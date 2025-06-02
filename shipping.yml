@@ -82,6 +82,8 @@
       - /app/db/schema.sql
       - /app/db/app-user.sql 
       - /app/db/master-data.sql
+    tags:
+    - import  
 
   - name: restarting the service
     ansible.builtin.service:
