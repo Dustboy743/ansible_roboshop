@@ -85,7 +85,7 @@
 
   - name: restarting the service
     ansible.builtin.service:
-      - name: shipping
-        state: restarted
+      name: shipping
+      state: restarted
 
 
