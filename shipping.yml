@@ -78,10 +78,10 @@
       login_host: "mysql.jiony.xyz"
       state: import
       target: "{{ item }}"
-      loop:
-        - /app/db/schema.sql
-        - /app/db/app-user.sql 
-        - /app/db/master-data.sql
+    loop:
+      - /app/db/schema.sql
+      - /app/db/app-user.sql 
+      - /app/db/master-data.sql
 
   - name: restarting the service
     ansible.builtin.service:
